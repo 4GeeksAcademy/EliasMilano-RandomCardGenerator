@@ -1,8 +1,6 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 #card {
-  height: 300px;
-  width: 200px;
   border: 1px solid black;
   border-radius: 5%;
 }

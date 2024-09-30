@@ -10,12 +10,15 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
     <div class="container-fluid text-center">
       <h1 class="mt-5">Random Card Generator 🪄🃏</h1>
-      <div id="card" class="card mt-5 mx-auto">
+      <div
+        id="card"
+        class="card mt-5 mx-auto"
+        style="width: 200px; height: 300 px;"
+      >
         <div id="card-header">
           <p id="text-header" class="text-black"></p>
         </div>
@@ -35,7 +38,32 @@
       <button id="button-auto-stop" type="button" class="btn btn-danger mt-3">
         Stop auto-generation
       </button>
-      <div class="fixed-bottom p-4">
+      <div class="col-3 mx-auto">
+        <div class="input-group flex-nowrap mt-2">
+          <span class="input-group-text" id="addon-wrapping">Height</span>
+          <input
+            id="input-height"
+            type="text"
+            class="form-control"
+            placeholder="Insert new height in px"
+            aria-label="Height"
+            aria-describedby="addon-wrapping"
+          />
+        </div>
+        <div class="input-group flex-nowrap mt-2">
+          <span class="input-group-text" id="addon-wrapping">Width</span>
+          <input
+            id="input-width"
+            type="text"
+            class="form-control"
+            placeholder="Insert new width in px"
+            aria-label="Width"
+            aria-describedby="addon-wrapping"
+          />
+        </div>
+      </div>
+
+      <div class="p-4">
         Made with ❤️ by Elías Milano
       </div>
     </div>

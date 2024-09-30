@@ -67,4 +67,17 @@ window.onload = function() {
 
   let buttonAutoStop = document.querySelector("#button-auto-stop");
   buttonAutoStop.addEventListener("click", getRandomCardAutoStop);
+
+  let newHeight = 300;
+  let newWidth = 200;
+
+  document.querySelector("#input-height").addEventListener("change", event => {
+    newHeight = event.target.value;
+    document.querySelector("#card").style.height = newHeight + "px";
+  });
+
+  document.querySelector("#input-width").addEventListener("change", event => {
+    newWidth = event.target.value;
+    document.querySelector("#card").style.width = newWidth + "px";
+  });
 };
