@@ -49,6 +49,22 @@ window.onload = function() {
   }
   getRandomCard();
 
-  let buttonManual = document.querySelector("button");
+  let buttonManual = document.querySelector("#button-manual");
   buttonManual.addEventListener("click", getRandomCard);
+
+  let loop;
+  function getRandomCardAutoStart() {
+    loop = setInterval(getRandomCard, 10000);
+    return loop;
+  }
+
+  function getRandomCardAutoStop() {
+    clearInterval(loop);
+  }
+
+  let buttonAutoStart = document.querySelector("#button-auto-start");
+  buttonAutoStart.addEventListener("click", getRandomCardAutoStart);
+
+  let buttonAutoStop = document.querySelector("#button-auto-stop");
+  buttonAutoStop.addEventListener("click", getRandomCardAutoStop);
 };
