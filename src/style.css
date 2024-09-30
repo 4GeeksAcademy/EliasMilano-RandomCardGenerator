@@ -3,11 +3,12 @@
 #card {
   height: 300px;
   width: 200px;
+  border: 1px solid black;
+  border-radius: 5%;
 }
 
 #card-header {
   height: 30%;
-  border: 1px solid red;
   display: flex;
 }
 
@@ -20,7 +21,6 @@
 
 #card-body {
   height: 40%;
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,7 +34,6 @@
 
 #card-footer {
   height: 30%;
-  border: 1px solid red;
 }
 
 #card-footer p {
