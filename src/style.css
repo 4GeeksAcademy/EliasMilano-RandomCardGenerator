@@ -1,1 +1,47 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+#card {
+  height: 300px;
+  width: 200px;
+}
+
+#card-header {
+  height: 30%;
+  border: 1px solid red;
+  display: flex;
+}
+
+#card-header p {
+  font-size: 350%;
+  font-family: "Times New Roman";
+  display: flex;
+  padding-left: 5%;
+}
+
+#card-body {
+  height: 40%;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#card-body p {
+  font-size: 450%;
+  font-family: "Times New Roman";
+  margin: auto;
+}
+
+#card-footer {
+  height: 30%;
+  border: 1px solid red;
+}
+
+#card-footer p {
+  height: 100%;
+  font-size: 350%;
+  font-family: "Times New Roman";
+  display: flex;
+  padding-left: 5%;
+  rotate: 180deg;
+}
